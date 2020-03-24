@@ -3,22 +3,22 @@ module.exports = {
     return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        alowNull: false,
         autoIncrement: true,
         primaryKey: true,
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: false,
+        alowNull: false,
       },
       email: {
         type: Sequelize.STRING,
-        allowNull: false,
+        alowNull: false,
         unique: true,
       },
       password_hash: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
+        type: Sequelize.STRING,
+        alowNull: false,
       },
       created_at: {
         type: Sequelize.DATE,
