@@ -12,8 +12,12 @@ class Recipient extends Model {
         city: Sequelize.STRING,
         cep: Sequelize.INTEGER,
       },
-      sequelize
+      {
+        sequelize,
+      }
     );
+
+    return this;
   }
 }
 
